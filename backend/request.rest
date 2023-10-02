@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/api/services
+GET http://localhost:3000/api/service
 
 ###
 GET http://localhost:3000/api/services/6514aaabe2415bc216517631
@@ -23,6 +23,17 @@ Content-Type: application/json
 
 {
     "name": "TESTE ATUALIZAÇÃO",
+    "description": "Alguma descrição 2",
+    "price": 3500,
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.emania.com.br%2Fdireitos-autorais-aspectos-legais-da-fotografia%2F&psig=AOvVaw2EXOX3oA6t2igkFTvbdB6h&ust=1695939484892000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCICEoobpy4EDFQAAAAAdAAAAABAE"
+}
+
+###
+PUT http://localhost:3000/api/services/6514d0807aa657955a7050e6
+Content-Type: application/json
+
+{
+    "name": "MUDEIII",
     "description": "Alguma descrição 2",
     "price": 3500,
     "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.emania.com.br%2Fdireitos-autorais-aspectos-legais-da-fotografia%2F&psig=AOvVaw2EXOX3oA6t2igkFTvbdB6h&ust=1695939484892000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCICEoobpy4EDFQAAAAAdAAAAABAE"

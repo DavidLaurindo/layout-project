@@ -2,8 +2,10 @@ const router = require("express").Router()
 
 //Services router
 
-const servicesRouter = require("./services")
+const servicesRouter = require("./servicesRouter")
+const productsRouter = require("./productsRouter")
 
-router.use("/", servicesRouter)
+router.use("/service", servicesRouter)
+router.use("/products", productsRouter)
 
 module.exports = router

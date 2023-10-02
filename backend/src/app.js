@@ -1,5 +1,9 @@
 const express = require("express")
 const cors = require("cors")
+
+require("dotenv").config()
+const porta = process.env.PORT
+
 const app = express()
 
 app.use(cors())
@@ -15,6 +19,6 @@ const routes = require("./routes/router")
 
 app.use("/api", routes)
 
-app.listen(3000, function () {
-    console.log("Servidor Online!!")
+app.listen(porta, function () {
+  console.log("Servidor Online!!")
 })
